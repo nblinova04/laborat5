@@ -1,0 +1,192 @@
+body 
+{ 
+    background-color: #1C1C1D; 
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.logo img {
+    height: 50px;
+    margin-left: 500px;
+}
+
+.menu {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 100px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    transition: text-decoration 0.3s;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.user-options {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-right: 500px;
+}
+
+.user-options .icon {
+    margin-right: 10px; /* отступ между иконкой и селектором */
+}
+
+select {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.banner {
+    margin-top: 50px;
+    position: relative; /* Для того, чтобы разместить текст поверх изображения */
+    text-align: left; /* Центрируем текст внутри блока */
+    z-index: -1;
+}
+
+.banner h1 {
+    position: absolute;
+    text-align: left;
+    top: 160px;
+    left: 600px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    z-index: 1;
+    line-height: 1;
+    color: white; /* Цвет текста */
+   }
+   
+.banner h2 {
+    position: absolute;
+    text-align: left;
+    top: 350px;
+    left: 600px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    z-index: 1;
+    color: white; /* Цвет текста */
+}
+
+
+.container {
+    display: flex; /* Используем Flexbox для выравнивания */
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+    z-index: 1;
+}
+
+.submit-button {
+    background-color: #FFAE00; /* Цвет кнопки */
+    color: #1C1C1D; /* Цвет текста */
+    border: none; /* Убираем границу */
+    border-radius: 50px; /* Скругление */
+    width: 314px; /* Ширина */
+    height: 77px; /* Высота */
+    font-size: 24px; /* Размер шрифта */
+    cursor: pointer; /* Указываем на кликабельность */
+    transition: all 0.2s ease; /* Плавный переход при наведении */
+    display: flex; /* Используем Flexbox для выравнивания */
+    justify-content: center; /* Выравнивание по горизонтали */
+    align-items: center; /* Выравнивание по вертикали */
+    margin-bottom: 200px;
+}
+
+.submit-button:hover {
+    box-shadow: 0 0 10px rgba(255, 174, 0, 0.5); /* Тень при наведении */
+}
+
+.submit-button:active {
+    background-color: transparent; /* Прозрачный фон при нажатии */
+    color: #FFFFFF; /* Белый текст при нажатии */
+    border: 2px solid #FFAE00; /* Обводка цвета кнопки */
+}
+
+
+.two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-top: -100px;
+}
+  
+.image-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.image-two img {
+    width: auto; /* Автоматически подбирается ширина изображения */
+    height: auto; /* Автоматически подбирается высота изображения */
+    border-radius: 35px;
+}
+  
+.img2 {
+    max-width: 400px;
+    max-height: 250px;
+  }
+  
+.img3 {
+    max-width: 480px;
+    max-height: 300px;
+    margin-top: -100px;
+
+  }
+  
+.img4 {
+    max-width: 385px;
+    max-height: 240px;
+    margin-top: -100px;
+  }
+  
+.text-two {
+    margin-left: 20px;
+    color: #FFFFFF;
+}
+  
+h1 {
+    font-size: 73px;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+  
+p {
+    font-size: 23px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
