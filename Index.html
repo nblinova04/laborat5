@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/png" href="images/fav.png">
-   <!-- <link rel="stylesheet" href="styles.css">  -->
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@600&display=swap" rel="stylesheet">
     <title>ИЭиАС</title>
 </head>
@@ -23,94 +23,90 @@
             <ul>
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="group.html">Объединения</a></li>
-                <li><a href="Active.html">Актив</a></li>
+                <li><a href="active.html">Актив</a></li>
             </ul>
         </nav>
-        <div class="user-options">
-            <span class="icon">👤</span>
-            <select>
-                <option value="ru">Русский</option>
-                <option value="en">English</option>
-            </select>
-        </div>
     </header>
     
     <main>
 
-    <!-- 1 блок баннер -->
+    <!-- 1 блок -->
 
     <div class="banner" style="text-align: center;">
         <img width="1500" height="781" src="images/image1.png" alt="banner">
-        <h1>Мы создаем <br> историю института!</h1>
-        <h2>Участвуй в наших мероприятиях и начни <br> свою главу в нашем университете!</h2>
+        <h1> Мы создаем <br> историю института!</h1>
+        <p>Участвуй в наших мероприятиях и начни <br> свою главу в нашем университете!</p>
     </div>
-    <div class="container">
+    <div class="container_button">
         <button class="submit-button" onclick="window.location.href='registr.html'">Подать заявку</button>
     </div>
 
     <!-- 2 блок -->
 
     <div class="two">
-        <div class="image-two">
-          <img class="img2" src="images/image2.png" alt="Фотография 1">
-          <img class="img3" src="images/image3.png" alt="Фотография 2">
-          <img class="img4" src="images/image4.png" alt="Фотография 3">
-        </div>
-        <div class="text-two">
-          <h1>Чем мы занимаемся?</h1>
-          <p>Участвуй в наших мероприятиях и начни свою <br> главу в нашем университете! Участвуй в наших <br> мероприятиях и начни свою главу в нашем <br> университете!</p>
-          <p>Участвуй в наших мероприятиях и начни свою <br> главу в нашем университете! Участвуй в наших <br> мероприятиях и начни свою главу в нашем <br> университете!</p>
-          <p>Участвуй в наших мероприятиях и начни свою <br> главу в нашем университете! Участвуй в наших <br> мероприятиях и начни свою главу в нашем <br> университете!</p>
+        <div class="content-two">
+            <div class="image-two">
+                <img src="images/image3.png">
+            </div>
+            <div class="text-two">
+                <h1>Чем мы занимаемся?</h1>
+                <p style="color: white; font-weight: 300; font-size: 20px;">Участвую в наших мероприятиях и начни свою </br> главу в нашем университете! Участвую в наших </br> мероприятиях и начни свою главу в нашем университете!</p>
+                <p style="color: white; font-weight: 300; font-size: 20px;">Участвую в наших мероприятиях и начни свою </br> главу в нашем университете! Участвую в наших </br> мероприятиях и начни свою главу в нашем университете!</p>
+                <p style="color: white; font-weight: 300; font-size: 20px;">Участвую в наших мероприятиях и начни свою </br> главу в нашем университете! Участвую в наших </br> мероприятиях и начни свою главу в нашем университете!</p>
+            </div>
         </div>
     </div>
 
     <!-- 3 блок -->
-    
-    <div class="container">
-        <div class="slider">
-            <div class="slide">
-                <img src="images/image4.png" alt="">
-                <div class="slide-info">
-                    <p>Данные удалены</p>
-                    <span>30+</span>
-                    <p>организаторов</p>
-                    <span>100+</span>
-                    <p>участников</p>
-                </div>
+    <h1 style="margin-left: 520px;">Наши мероприятия</h1>
+    <div class="container-mero">
+        <div class="card-mero">
+            <img src="images/ener.png" alt="Фото мероприятия">
+            <h3>Экономим энергию</h3>
+            <div class="info">
+                <span class="organizers">
+                    <p class="number">15</p>
+                    <p class="label">организаторов</p>
+                </span>
+                <span class="participants">
+                    <p class="number">51</p>
+                    <p class="label">участника</p>
+                </span>
             </div>
-            <div class="slide">
-                <img src="images/image4.png" alt="">
-                <div class="slide-info">
-                    <p>Экономим энергию с иэиу</p>
-                    <span>30+</span>
-                    <p>организаторов</p>
-                    <span>100+</span>
-                    <p>участников</p>
-                </div>
+        </div>
+        <div class="card-mero">
+            <img src="images/strah.png" alt="Фото мероприятия">
+            <h3>Страшный квест</h3>
+            <div class="info">
+                <span class="organizers">
+                    <p class="number">25</p>
+                    <p class="label">организаторов</p>
+                </span>
+                <span class="participants">
+                    <p class="number">79</p>
+                    <p class="label">участников</p>
+                </span>
             </div>
-            <div class="slide">
-                <img src="images/image4.png" alt="">
-                <div class="slide-info">
-                    <p>Лабиринты</p>
-                    <span>30+</span>
-                    <p>организаторов</p>
-                    <span>100+</span>
-                    <p>участников</p>
-                </div>
-            </div>
-            <div class="slider-controls">
-                <a href="#" class="prev">
-                    <img src="images/button1.png" alt="Предыдущая">
-                </a>
-                <a href="#" class="next">
-                    <img src="images/button2.png" alt="Следующая">
-                </a>
+        </div>
+        <div class="card-mero">
+            <img src="images/BG.png" alt="Фото мероприятия">
+            <h3>BOYS vs GIRLS</h3>
+            <div class="info">
+                <span class="organizers">
+                    <p class="number">15</p>
+                    <p class="label">организаторов</p>
+                </span>
+                <span class="participants">
+                    <p class="number">40</p>
+                    <p class="label">участников</p>
+                </span>
             </div>
         </div>
     </div>
+    
     </main>
 
-<!-- Подвал -->
+    <!-- Подвал -->
 
     <footer>
         <div class="footer-content">
@@ -118,6 +114,5 @@
             <a href="#">Политика конфиденциальности</a>
         </div>
     </footer>
-    
 </body>
 </html>

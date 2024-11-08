@@ -7,9 +7,88 @@
     <meta name="description" content="ИЭиАС - сайт института Энергитики и Автоматизированных систем МГТУ им. Г.И. Носова">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/png" href="images/fav.png">
-   <!-- <link rel="stylesheet" href="styles.css">  -->
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@600&display=swap" rel="stylesheet">
-    <title>ИЭиАС</title>
+    <title>Регистрация</title>
+    <style>
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; 
+    padding-top: 30px;
+    padding-left: 50px;
+}
+   
+.form-container {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 50px;
+}
+   
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #1C1C1D;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -5px;
+}
+   
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+   
+input {
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: #EFEFEF;
+    font-size: 16px;
+    width: 400px; 
+}
+   
+input::placeholder {
+    color: #DDDDDD;
+}
+   
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+   
+button {
+     background-color: #9900FF;
+     color: #fff; 
+     border: none; 
+     border-radius: 40px;
+     width: 350px;
+     height: 50px;
+     font-size: 20px; 
+     cursor: pointer;
+     transition: all 0.2s ease;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 50px;
+     margin: 0 auto;
+}
+   
+button:hover {
+     box-shadow: 0 0 10px rgba(153, 0, 255, 0.5); 
+}
+   
+button:active {
+     background-color: transparent; 
+     color: #1C1C1D;
+     border: 2px solid #9900FF; 
+}
+    </style>
 </head>
 
 <body>
@@ -24,37 +103,24 @@
         <ul>
             <li><a href="index.html">Главная</a></li>
             <li><a href="group.html">Объединения</a></li>
-            <li><a href="aktiv.html">Актив</a></li>
+            <li><a href="active.html">Актив</a></li>
         </ul>
     </nav>
-    <div class="user-options">
-        <span class="icon">👤</span>
-        <select>
-            <option value="ru">Русский</option>
-            <option value="en">English</option>
-        </select>
-    </div>
 </header>
     
 <main>
-    <div class="container">
-         <h1>Заполните контактные данные</h1>
-        <form>
-            <label for="name">Название команды:</label>
-            <input type="text" id="name"  required>
-    
-            <label for="name">Учебное заведение:</label>
-            <input type="text" id="names"  required>
-    
-            <label for="name">ФИО капитана:</label>
-            <input type="text" id="names" required>
-    
-            <label for="name">Ссылка на ВК капитана:</label>
-            <input type="text" id="names" required>
-    
-            <button type="submit">Отправить заявку</button>
-        </form>
-    </div>    
+    <section class="form-section">
+        <div class="form-container">
+            <h2>Заполните контактные </br> данные</h2>
+            <form>
+                <input type="text" placeholder="Название команды" required>
+                <input type="text" placeholder="Учебное заведение" required>
+                <input type="text" placeholder="Капитан команды" required>
+                <input type="text" placeholder="ВК капитана" required>
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
 </main>
 
 <!-- Подвал -->
@@ -65,6 +131,5 @@
         <a href="#">Политика конфиденциальности</a>
     </div>
 </footer>
-
 </body>
 </html>
