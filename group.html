@@ -34,27 +34,25 @@ p {
 
     <!-- Шапка -->
 
-    <header class="header">
-        <div class="logo">
-            <img src="images/logo.svg" alt="Логотип">
-        </div>
-        <div class="menu-hamburger">
-            <div class="menu-popup">
-                <nav class="menu-komp">
-                    <ul>
-                        <li><a href="index.html" class="menu-item">Главная</a></li>
-                        <li><a href="group.html" class="menu-item">Объединения</a></li>
-                        <li><a href="active.html" class="menu-item">Актив</a></li>
-                    </ul>
-                </nav>
+    <nav class="navbar">
+        <div class="container-menu">
+          <div class="navbar__wrap">
+            <div class="hamb">
+              <div class="hamb__field" id="hamb">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
             </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>      
+            <img src="images/logo.svg">
+            <ul class="menu" id="menu">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="group.html">Объединения</a></li>
+              <li><a href="active.html">Актив</a></li>
+            </ul>
+          </div>
         </div>
-    </header>
+      </nav>
+      <div class="popup" id="popup"></div>
 
 <main>
 
@@ -131,6 +129,6 @@ p {
             <a href="#">Политика конфиденциальности</a>
         </div>
     </footer>
-
+    <script src="java.js"></script>
 </body>
 </html>
