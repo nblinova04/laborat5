@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <meta name="keywords" content="ИЭиАС, институт, Энергетика, Автоматизированные системы">
     <meta name="description" content="ИЭиАС - сайт института Энергитики и Автоматизированных систем МГТУ им. Г.И. Носова">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/png" href="images/fav.png">
     <link rel="stylesheet" href="styles.css">
@@ -37,13 +38,22 @@ p {
         <div class="logo">
             <img src="images/logo.svg" alt="Логотип">
         </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="group.html">Объединения</a></li>
-                <li><a href="active.html">Актив</a></li>
-            </ul>
-        </nav>
+        <div class="menu-hamburger">
+            <div class="menu-popup">
+                <nav class="menu-komp">
+                    <ul>
+                        <li><a href="index.html" class="menu-item">Главная</a></li>
+                        <li><a href="group.html" class="menu-item">Объединения</a></li>
+                        <li><a href="active.html" class="menu-item">Актив</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>      
+        </div>
     </header>
 
 <main>
@@ -54,14 +64,15 @@ p {
         <div class="content">
             <div class="content-text">
             <h1>Что такое студ.объединения?</h1>
-            <p style="color: white; font-weight: 300; font-size: 20px;">Участвую в наших мероприятиях и начни свою </br> главу в нашем университете! Участвую в наших </br> мероприятиях и начни свою главу в нашем университете!</p>
-            <p style="color: white; font-weight: 300; font-size: 20px;">Участвую в наших мероприятиях и начни свою </br> главу в нашем университете! Участвую в наших </br> мероприятиях и начни свою главу в нашем университете!</p>
-            <p style="color: white; font-weight: 300; font-size: 20px;">Участвую в наших мероприятиях и начни свою </br> главу в нашем университете! Участвую в наших </br> мероприятиях и начни свою главу в нашем университете!</p>
+            <p style="color: white; font-weight: 300;">Участвую в наших мероприятиях и начни свою </br> главу в нашем университете! Участвую в наших </br> мероприятиях и начни свою главу в нашем университете!</p>
+            <p style="color: white; font-weight: 300;">Участвую в наших мероприятиях и начни свою </br> главу в нашем университете! Участвую в наших </br> мероприятиях и начни свою главу в нашем университете!</p>
+            <p style="color: white; font-weight: 300;">Участвую в наших мероприятиях и начни свою </br> главу в нашем университете! Участвую в наших </br> мероприятиях и начни свою главу в нашем университете!</p>
             </div>
             <div class="content-image">
             <img src="images/images5.jpg">
             </div>
         </div>
+    </div>
 
     <!-- 2 Блок -->
 
@@ -109,28 +120,6 @@ p {
                 </div>
             </div>
         </div>
-
-        <!-- 3 Блок -->
-
-        <div class="content-group">
-            <h1>Галерея</h1>
-        </div>
-
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="images/images5.jpg" alt="Изображение галереи">
-            </div>
-        </div>
-
-        <div class="slider-controls">
-            <a href="#" class="prev">
-                <img src="images/button1.png" alt="Предыдущая">
-            </a>
-            <a href="#" class="next">
-                <img src="images/button2.png" alt="Следующая">
-            </a>
-        </div>
-    </div>
 </main>
 
 <!-- Подвал -->

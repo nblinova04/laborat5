@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <meta name="keywords" content="ИЭиАС, институт, Энергетика, Автоматизированные системы">
     <meta name="description" content="ИЭиАС - сайт института Энергитики и Автоматизированных систем МГТУ им. Г.И. Носова">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/png" href="images/fav.png">
     <link rel="stylesheet" href="styles.css">
@@ -88,6 +89,28 @@ button:active {
      color: #1C1C1D;
      border: 2px solid #9900FF; 
 }
+
+@media (max-width: 414px) {
+    .form-container {
+        padding: 20px;
+    }
+    .form-section {
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    input {
+        font-size: 12px;
+        padding: 8px;
+        width: 340px;
+    }
+    button {
+        height: 30px;
+        font-size: 14px;
+    }
+}
     </style>
 </head>
 
@@ -99,15 +122,24 @@ button:active {
     <div class="logo">
         <img src="images/logo.svg" alt="Логотип">
     </div>
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="group.html">Объединения</a></li>
-            <li><a href="active.html">Актив</a></li>
-        </ul>
-    </nav>
+    <div class="menu-hamburger">
+        <div class="menu-popup menu-right">
+            <nav class="menu-komp">
+                <ul>
+                    <li><a href="index.html" class="menu-item">Главная</a></li>
+                    <li><a href="group.html" class="menu-item">Объединения</a></li>
+                    <li><a href="active.html" class="menu-item">Актив</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>      
+    </div>
 </header>
-    
+
 <main>
     <section class="form-section">
         <div class="form-container">
@@ -131,5 +163,7 @@ button:active {
         <a href="#">Политика конфиденциальности</a>
     </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>

@@ -38,7 +38,7 @@ p {
     margin-left: 500px;
 }
 
-.menu ul {
+.menu-komp ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -46,17 +46,17 @@ p {
     margin-right: 1000px;
 }
   
-.menu li {
+.menu-komp li {
     margin-left: 100px;
 }
   
-.menu a {
+.menu-komp a {
     text-decoration: none;
     color: #fff;
     font-family: 'Montserrat', sans-serif; 
 }
   
-.menu a:hover {
+.menu-komp a:hover {
     text-decoration: underline; 
 }
 
@@ -79,7 +79,6 @@ footer a {
     text-decoration: none;
     color: #1C1C1D;
 }
-
 
 /* Главная - 1 */
 
@@ -163,6 +162,10 @@ footer a {
     flex-direction: column;
 }
 
+.text-two p {
+    font-size: 20px;
+}
+
 .image-two img {
     width: 700px; 
     height: auto; 
@@ -179,6 +182,10 @@ footer a {
 }
 
 /* Главная - 3 */
+
+.mero {
+    margin-left: 520px;
+}
 
 .container-mero {
     display: flex;
@@ -263,7 +270,7 @@ footer a {
 }
   
 .container p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
     margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -305,6 +312,7 @@ footer a {
     flex-direction: column;
     gap: 20px;
     margin-top: 50px;
+    align-items: center;
 }
    
 .item {
@@ -313,6 +321,7 @@ footer a {
     border-radius: 10px;
     display: flex; 
     gap: 50px;
+    width: 50%;
 }
    
 .item img {
@@ -327,40 +336,6 @@ footer a {
     justify-content: center;
 }
 
-/* Объединения - 3 */
-   
-.gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-   
-.gallery-item {
-    width: 1000px; 
-    height: auto; 
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden; 
-    position: relative;
-    margin-top: -50px;
-}
-   
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-}
-   
-.slider-controls {
-    display: flex;
-    justify-content: center;
-}
-   
-.slider-controls img {
-    width: 50px;
-    height: 50px;
-}
-
 /* Актив - 1 */
 
 .aktiv {
@@ -373,6 +348,10 @@ footer a {
 .text-aktiv { 
     display: flex;
     flex-direction: column;
+}
+
+.text-aktiv p {
+    font-size: 20px;
 }
 
 .image-aktiv img {
@@ -426,4 +405,412 @@ footer a {
     font-size: 16px; 
     color: #1C1C1D; 
 }
-   
+
+@media (max-width: 414px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 8px;
+    }
+
+    /* шапка */
+
+    .header {
+        margin: auto;
+    }
+    
+    .logo img {
+        margin-left: auto;
+        width: 80px;
+        height: auto;
+    }
+
+    .menu-komp {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        margin-top: -10px;
+    }
+
+    /* Главная */
+    .banner img {
+        width: 400px;
+        height: auto;
+        margin-top: -30px;
+    }
+    .banner h1 {
+        font-size: 20px;
+        left: 20px;
+        top: 20px;
+    }
+
+    .banner p {
+        font-size: 8px;
+        left: 20px;
+        top: 75px;
+    }
+
+    .submit-button {
+        width: 90px;
+        height: 20px;
+        border-radius: 15px;
+        font-size: 8px;
+        margin-top: 32px;
+        margin-left: 2px;
+    }
+
+    .content-two {
+        margin-left: -235px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+
+    .text-two p {
+        font-size: 14px;
+        margin-left: 110px;
+    }
+
+    .text-two h1 {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .image-two img {
+        display: none;
+    }
+
+    .container-mero {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    
+    .card-mero {
+        background-color: #fff;
+        border-radius: 10px;
+        text-align: center;
+        width: 80%;
+        max-width: 300px;
+    }
+    
+    .card-mero img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        object-fit: cover; 
+    }
+    
+    .card-mero h3 {
+        font-size: 1.5rem;
+    }
+
+    .mero {
+        margin-left: 25px;
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+    }
+    
+    .info {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    
+    .info span {
+        padding: 6px 12px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .organizers, .participants {
+        background-color: #9900FF; 
+        color: #fff;
+    }
+    
+    .participants{
+        background-color: #FFAE00;
+        color: #fff;
+    }
+    
+    .number {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 2px;
+        margin-top: 0;
+    }
+    
+    .label {
+        font-size: 0.9rem;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    /* актив */
+    .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px
+    }
+    .card {
+        width: calc(100% - 100px);
+        max-width: 100%; 
+    }
+
+    .container-aktiv {
+        gap: 20px; 
+        margin-top: 20px; 
+    }
+
+    .content-aktiv {
+        display: block;
+        padding-right: 0px;
+        margin-left: -175px;
+    }
+
+    .image-aktiv img {
+        width: 380px;
+        padding-top: 0px;
+    }
+    
+    .image-aktiv {
+        margin-left: -115px;
+    }
+
+    .text-aktiv {
+        margin-left: -100px;
+    }
+
+    .text-aktiv p {
+        font-size: 14px;
+    }
+
+    .text-aktiv h1 {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    /* Объединения */
+
+    .items {
+        display: flex;
+        flex-wrap: wrap; /* Разрешаем перенос на новую строку */
+        justify-content: center; /* Центрирование карточек */
+        gap: 20px;
+        margin-top: -20px;
+        align-items: center;
+    }
+    
+    .item {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        width: calc(70%); /* Занимает 50% ширины, с учетом gap */
+        box-sizing: border-box; /* Включаем padding в ширину */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .item img {
+        width: 100%;
+        max-width: 250px; /* Уменьшаем максимальную ширину */
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .item-text {
+        text-align: center;
+        margin-top: -60px;
+    }
+    
+    .item-text p {
+        display: none;
+    }
+
+    .content {
+        display: block;
+        padding-right: 0px;
+        margin-left: -175px;
+    }
+
+    .content-image {
+        display: none;
+    }
+
+    .content-text p {
+        font-size: 14px;
+        margin-left: -320px;
+    }
+
+    .content-text h1 {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: -335px;
+        margin-top: -5px;
+    }
+
+    /* Подвал */
+    
+    footer {
+        width: auto;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .footer-content {
+        margin-top: -7px;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Шапка */
+
+    .header {
+        justify-content: flex-start;
+    }
+
+    .logo img {
+        height: 50px;
+        margin-left: 100px;
+    }
+
+    .menu-komp ul {
+        margin-right: auto;
+    }
+      
+    .menu-komp li {
+        margin-left: 100px;
+    }
+
+    /* Главная */
+
+    .banner img {
+        width: 950px;
+        height: auto;
+        margin-top: -20px;
+    }
+    .banner h1 {
+        font-size: 50px;
+        left: 60px;
+        top: 50px;
+    }
+
+    .banner p {
+        font-size: 16px;
+        left: 60px;
+        top: 190px;
+    }
+
+    .submit-button {
+        width: 210px;
+        height: 50px;
+        border-radius: 25px;
+        font-size: 14px;
+        margin-top: 15px;
+        margin-left: 2px;
+    }
+    
+
+    .content-two {
+        margin-left: -235px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        gap: 20px;
+    }
+
+    .image-two {
+        margin-left: 250px;
+    }
+
+    .image-two img {
+        width: 450px;
+    }
+
+    .text-two p {
+        font-size: 18px;
+        margin-left: 50px;
+    }
+
+    .text-two h1 {
+        font-size: 45px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: -25px;
+    }
+
+    .container-mero {
+        gap: 20px;
+
+    }
+
+    .mero {
+        margin-left: 30px;
+        font-size: 45px;
+    }
+
+    /* Актив */
+    
+    .aktiv {
+        display: flex;
+    }
+
+    .image-aktiv {
+        margin-right: -10px;
+    }
+    
+    .image-aktiv img {
+        padding-top: 0px;
+        width: 400px;
+    }
+
+    .container-aktiv {
+        gap: 10px;
+    }
+
+    .content-aktiv {
+        gap: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+        flex-direction: row-reverse;
+    }
+
+    .text-aktiv p {
+        font-size: 16px;
+    }
+
+    .row {
+        gap: 20px;
+    }
+
+    /* Подвал */
+    
+    footer {
+        width: auto;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .footer-content {
+        margin-top: -7px;
+    }
+}
