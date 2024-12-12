@@ -11,6 +11,64 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@600&display=swap" rel="stylesheet">
     <title>ИЭиАС главная</title>
+    <style>
+        #eventsList {
+            margin-top: 20px;
+            margin-left: 520px;
+            margin-right: 520px;
+        }
+        .event {
+            border: 1px solid #fff;
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+        input, select {
+            margin-right: 10px;
+            padding: 5px;
+        }
+
+        .vibor {
+            margin-left: 520px;
+        }
+
+        .vibor-h1 {
+            margin-left: 520px;
+        }
+
+        @media (max-width: 1024px) {
+            #eventsList {
+            margin-top: 20px;
+            margin-left: 0px;
+            margin-right: auto;
+        }
+        .event {
+            border: 1px solid #fff;
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+        input, select {
+            margin-right: 10px;
+            padding: 5px;
+        }
+
+        .vibor {
+            margin-left: 0px;
+                }
+
+        .vibor-h1 {
+            margin-left: 30px;
+            font-size: 45px;
+        }
+        }
+        @media (max-width: 414px) {
+            .vibor-h1 {
+            margin-left: 25px;
+            font-size: 30px;
+        }
+        }
+    </style>
 </head>
 <body>
 
@@ -111,7 +169,23 @@
             </div>
         </div>
     </div>
+
+    <!-- 4 блок -->
+
     
+    
+    <h1 class="vibor-h1">Каталог мероприятий</h1>
+<div class="vibor">
+<input type="text" id="search" placeholder="Поиск..." oninput="filterEvents()" />
+<select id="categoryFilter" onchange="filterEvents()">
+    <option value="">Все категории</option>
+    <option value="Универ">Университетское мероприятие</option>
+    <option value="Город">Городское мероприятие</option>
+    <option value="Округ">Окружное мероприятие</option>
+</select>
+</div>
+<div id="eventsList"></div>
+
     </main>
 
     <!-- Подвал -->
