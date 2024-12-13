@@ -15,7 +15,7 @@
         #eventsList {
             margin-top: 20px;
             margin-left: 520px;
-            margin-right: 520px;
+            width: 700px;
         }
         .event {
             border: 1px solid #fff;
@@ -24,7 +24,6 @@
             background-color: #fff;
         }
         input, select {
-            margin-right: 10px;
             padding: 5px;
         }
 
@@ -34,6 +33,7 @@
 
         .vibor-h1 {
             margin-left: 520px;
+
         }
 
         @media (max-width: 1024px) {
@@ -41,6 +41,7 @@
             margin-top: 20px;
             margin-left: 0px;
             margin-right: auto;
+            width: 985px;
         }
         .event {
             border: 1px solid #fff;
@@ -61,8 +62,12 @@
             margin-left: 30px;
             font-size: 45px;
         }
+
         }
         @media (max-width: 414px) {
+            #eventsList {
+                width: 400px;
+            }
             .vibor-h1 {
             margin-left: 25px;
             font-size: 30px;
@@ -174,7 +179,7 @@
 
     
     
-    <h1 class="vibor-h1">Каталог мероприятий</h1>
+<h1 class="vibor-h1">Каталог мероприятий</h1>
 <div class="vibor">
 <input type="text" id="search" placeholder="Поиск..." oninput="filterEvents()" />
 <select id="categoryFilter" onchange="filterEvents()">

@@ -212,8 +212,7 @@ footer a {
     display: flex; 
     gap: 150px; 
     padding-top: 50px;
-    padding-left: 500px;
-    padding-right: 500px;
+    padding-left: 50px;
     align-items: center;
 }
 
@@ -318,8 +317,7 @@ footer a {
     display: flex; 
     gap: 50px; 
     padding-top: 20px;
-    padding-left: 520px;
-    padding-right: 520px;
+    padding-left: 50px;
   }
 
 .content-text { 
